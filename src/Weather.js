@@ -14,7 +14,7 @@ export default function Weather(props) {
       temperature: Math.round(response.data.daily[0].temperature.day),
       wind: Math.round(response.data.daily[0].wind.speed),
       humidity: response.data.daily[0].temperature.humidity,
-      iconUrl: ` https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png`,
+      iconUrl: response.data.daily[0].condition.icon_url,
       description: response.data.daily[0].condition.description,
       date: new Date(response.data.daily[0].time * 1000),
     });

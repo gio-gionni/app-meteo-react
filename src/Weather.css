@@ -34,13 +34,21 @@
 
 .Weather .temperature {
   color: rgb(33, 33, 33);
-  font-size: 64px;
+  font-size: 60px;
   line-height: 64px;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .Weather .unit {
   vertical-align: top;
   font-size: 16px;
   margin-left: 0px;
+}
+
+.Weather a {
+  text-decoration: none;
+}
+
+.Weather a:hover {
+  text-decoration: underline;
 }
